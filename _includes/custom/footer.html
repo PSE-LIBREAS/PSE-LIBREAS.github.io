@@ -1,0 +1,17 @@
+<footer class="footer">
+<hr>
+<p><a href="https://creativecommons.org/licenses/by/4.0/">All content licensed under Creative Commons Attribution 4.0 Unported (CC BY 4.0)</a>, if not otherwise stated.
+</p>
+<p>LIBREAS. Library Ideas wird herausgegeben am <a href="https://www.ibi.hu-berlin.de/">Institut für Bibliotheks- und Informationswissenschaft</a> der <a href="https://www.hu-berlin.de/">Humboldt-Universität zu Berlin</a></p>
+<p>Hosted on <a href="http://github.com/libreas/libreas.github.io">GitHub</a>, made with <a href="http://octopress.org/">Jekyll/Octopress</a> and <a href="http://johnmacfarlane.net/pandoc/">pandoc</a></p>
+
+<p>ISSN: 1860-7950</p>
+
+{% if site.author %}
+    {{ site.author }}
+{% else %}
+    {{ site.title }}
+{% endif %}
+(last updated: <a href="https://github.com/libreas/libreas.github.io/commits/master">{{ site.time | date: "%Y-%m-%d" }}</a>)</p>
+
+</footer>
