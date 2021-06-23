@@ -2,12 +2,16 @@
 #      Main Configs       #
 # ----------------------- #
 
+
+baseurl: https://pse-libreas.github.io/
 url: https://pse-libreas.github.io/
 title: LIBREAS. Library Ideas
 subtitle: Elektronische Zeitschrift für Bibliotheks- und Informationswissenschaft 
 author: LIBREAS. Library Ideas
 simple_search: http://google.com/search
 description:
+repository: PSE-LIBREAS/PSE-LIBREAS.github.io
+
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
