@@ -27,7 +27,7 @@ email: redaktion@libreas.eu
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll/scholar
