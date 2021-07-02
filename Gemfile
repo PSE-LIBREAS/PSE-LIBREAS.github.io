@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.2.0"
-gem "github-pages", "~> 214", group: :jekyll_plugins
+gem "github-pages", "~> 215", group: :jekyll_plugins
 gem 'jekyll-scholar', "~> 7.0.0", group: :jekyll_plugins
 gem 'bibtex-ruby' ~> "6.0"
 gem 'citeproc-ruby' ~> "1.0"
