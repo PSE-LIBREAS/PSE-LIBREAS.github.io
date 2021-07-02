@@ -1,4 +1,4 @@
-#https://github.com/inukshuk/jekyll-scholar/issues/30
+#https://github.com/inukshuk/jekyll-scholar/issues/30#issuecomment-544306933
 
 # Contributed by @mfenner as markdown_links.rb
 # See https://github.com/inukshuk/jekyll-scholar/issues/30
