@@ -44,6 +44,7 @@ scholar:
   bibtex_filters: 	
     - latex
     - doilinks
+    - htmllinks
 
   
 # Exclude from processing.
