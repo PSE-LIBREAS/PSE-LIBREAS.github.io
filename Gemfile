@@ -12,8 +12,8 @@ gem "jekyll", "~> 4.2.0"
 gem "github-pages", "~> 215", group: :jekyll_plugins
 gem 'jekyll-scholar', "~> 7.0.0", group: :jekyll_plugins
 gem 'bibtex-ruby', '~> 6.0'
-gem 'citeproc-ruby' "~> 1.0"
-gem 'csl-styles' "~> 1.0" 
+gem 'citeproc-ruby', '~> 1.1', '>= 1.1.13'
+gem 'csl-styles', '~> 1.0', '>= 1.0.1.11'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
