@@ -26,7 +26,8 @@ end
 module Jekyll
   class Scholar
     class DOILinks < BibTeX::Filter
-      DOI_FILTER = Regexp.new("^10\\.\\d{4,9}/[-._;()/:A-Z0-9]+$", Regexp::IGNORECASE)
+      #DOI_FILTER = Regexp.new("^10\\.\\d{4,9}/[-._;()/:A-Z0-9]+$", Regexp::IGNORECASE)
+      DOI_FILTER = Regexp.new("^10\\.\\d{3,9}/\\S+$", Regex::IGNORECASE)
       def apply(value)
         value.to_s.gsub(DOI_FILTER) {
           "<a href=\"https://doi.org/#{$&}\">#{$&}</a>"
