@@ -32,7 +32,7 @@ module Jekyll
       DOI_FILTER = Regexp.new("^10\\.\\d{4,9}/[-._;()/:A-Z0-9]+$", Regexp::IGNORECASE)
       def apply(value)
         value.to_s.gsub(DOI_FILTER) {
-          "<a href=\"#{$&}\">#{$&}</a>"
+          "<a href=\"https://doi.org/#{$&}\">#{$&}</a>"
         }
       end
     end
