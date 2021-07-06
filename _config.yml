@@ -33,7 +33,7 @@ plugins:
   - jekyll/scholar
   
 scholar:
-  style: mla
+  style: modern-language-association
   locale: de 	#Defines what language to use when formatting your references (this typically applies to localized terms, e.g., 'Eds.' for editors in English).
   source: ./_bibliography 	# Indicates where your bibliographies are stored.
   bibliography: references.bib 	#Indicates the name of your default bibliography. For best results, please ensure that your bibliography is encoded as ASCII or UTF-8. A string that contains a * will be passed to Dir::glob, so **/*.bib{,tex} will find all files named *.bib and *.bibtex under source.
