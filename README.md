@@ -20,6 +20,10 @@ Um die Übersichtlichkeit zu verbessern, ahben wir entschieden, dass alte Ausgab
 
 Wir haben einen DLDL Bibliographie Link in die Navigation aufgenommen.
 
+### Aufsetzen einer GitHub Action
+
+
+
 ### Ablauf der Veröffentlichung
 1. Inhalte vorbereiten wie gehabt (als md oder html – yaml header muss in jedem Fall enthalten sein)
 2. file structure beachten (ordner entsprechend der Verlinkungen)
@@ -31,3 +35,4 @@ Wir haben einen DLDL Bibliographie Link in die Navigation aufgenommen.
 2. Inhalte müssen importiert werden
 3. plugins müssen überprüft/ergänzt werden
 4. evtl. DOIs in Bibliographie als klickbare Links setzen (wird aktuell noch nicht richtig dargestellt)
+5. Der Footer muss aktualisiert/angepasst werden
