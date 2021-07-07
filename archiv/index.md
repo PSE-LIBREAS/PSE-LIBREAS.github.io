@@ -2,4 +2,4 @@
 layout: page
 ---
 
-[Ausgabe 37](/ausgabe37)
+[Ausgabe 37](/ausgabe37/)
