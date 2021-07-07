@@ -14,6 +14,9 @@ gem "jekyll", "~> 4.2.0"
 gem 'citeproc-ruby', '~> 1.1', '>= 1.1.13'
 gem 'csl-styles', '~> 1.0', '>= 1.0.1.11'
 gem 'pygments.rb', '~> 2.2'
+gem 'rubypants', '~> 0.7.1'
+gem 'octopress-quote-tag', '~> 1.0', '>= 1.0.4'
+gem 'titlecase', '~> 0.1.1'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
