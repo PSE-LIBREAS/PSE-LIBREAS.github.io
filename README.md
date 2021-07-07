@@ -15,7 +15,7 @@ Die Bibliographie liegt im `BibTeX` Format im Ordner `_bibliography` und muss im
 
 #### Neue Ordnerstruktur
 
-Um die Übersichtlichkeit des Repos zu verbessern, haben wir entschieden die Ordnerstruktur ein wenig abzuändern. Wir haben einen Überordner `archiv` erstellt, in dem wir für alle alten Ausgaben der LIBREAS jeweils eigene Unterordner ablegen wollen. Der übergeordnete `archiv` Ordner enthält zusätzlich eine `index.md`, in der wir über Links im Markdown Format auf die jeweiligen Unterordner verweisen. Für die jeweils aktuelle Ausgabe der LIBREAS haben wir einen Ordner `aktuelle_ausgabe` erstellt, in dem dann ein Ordner für den content der aktuellen Ausgabe liegen soll. Die `about.md`, die zuvor im root Verzeichnis des Repos lag, haben wir in einen neu erstellten `about` Ordner verschoben und zu `index.md` umbenannt. Wir wollten damit erreichen, dass für jeden Reiter in der Seitenleiste (nav-bar), hinter dem kein externer Link liegt, ein eigener (Unter-)Ordner existiert und somit nur die `index.md` der Startseite sowie die `404.html` (plain) unter root liegen. Im LIBREAS-Repo bereits existierende Ordner wurden dabei weitesgehend übernommen (z.B. authorguides, autorinnen, bilder).
+Um die Übersichtlichkeit des Repos zu verbessern, haben wir entschieden die Ordnerstruktur ein wenig abzuändern. Wir haben einen Ordner `archiv` erstellt, in dem wir für alle alten Ausgaben der LIBREAS jeweils eigene Unterordner ablegen wollen. Der übergeordnete `archiv` Ordner enthält zusätzlich eine `index.md`, in der wir über Links im Markdown Format auf die jeweiligen Unterordner verweisen. Für die jeweils aktuelle Ausgabe der LIBREAS haben wir einen Ordner `aktuelle_ausgabe` erstellt, in dem dann ein Ordner für den content der aktuellen Ausgabe liegen soll. Die `about.md`, die zuvor im root Verzeichnis des Repos lag, haben wir in einen neu erstellten `about` Ordner verschoben und zu `index.md` umbenannt. Wir wollten damit erreichen, dass für jeden Reiter in der Seitenleiste (nav-bar), hinter dem kein externer Link liegt, ein eigener (Unter-)Ordner existiert und somit nur die `index.md` der Startseite sowie die `404.html` (plain) unter root liegen. Im LIBREAS-Repo bereits existierende Ordner wurden dabei weitesgehend übernommen (z.B. authorguides, autorinnen, bilder).
 
 #### Veränderungen an der Website
 
@@ -26,9 +26,9 @@ Wir haben einen DLDL Bibliographie Reiter in der Seitenleiste hinzugefügt. Dazu
 
 
 ### Ablauf der Veröffentlichung
-1. Inhalte vorbereiten wie gehabt (als md oder html – yaml header muss in jedem Fall enthalten sein)
-2. file structure beachten (ordner entsprechend der Verlinkungen)
-3. GitHub Action ausführen
+1. Inhalte vorbereiten wie gehabt (als md oder html – yaml header muss in jedem Fall enthalten sein, damit Jekyll die Seite ordentlich bauen kann)
+2. Geänderte Ordnerstruktur beachten (Ordner entsprechend der Verlinkungen)
+3. GitHub Action ausführen (manuell)
 4. Regelmäßige Update-Routine (Jekyll, Gems, Dependencies)
 
 ### To-Do's
