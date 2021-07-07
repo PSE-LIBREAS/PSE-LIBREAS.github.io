@@ -19,11 +19,11 @@ Um die Übersichtlichkeit des Repos zu verbessern, haben wir entschieden die Ord
 
 #### Veränderungen an der Website
 
-Wir haben einen DLDL Bibliographie Reiter in der Seitenleiste hinzugefügt. Dazu haben wir ein neues `sidebar-nav-item` in der `navigation.html`, die in `_includes/custom/` liegt, unterhalb des `AutorInnen` Reiters eingefügt und entsprechend auf unseren `dldlbibliography` Ordner verlinkt. Dieser Ordner enthält lediglich eine `index.hmtl` Datei, die die Bibliographie über `{% bibliography %}` einbindet.
+Wir haben einen DLDL Bibliographie Reiter in der Seitenleiste hinzugefügt. Dazu haben wir ein neues `sidebar-nav-item` in der `navigation.html`, die in `_includes/custom/` liegt, unterhalb des `AutorInnen` Reiters eingefügt und entsprechend auf unseren neu erstellten `dldlbibliography` Ordner verlinkt. Dieser Ordner enthält lediglich eine `index.hmtl` Datei, die die Bibliographie über `{% bibliography %}` einbindet.
 
 ### Aufsetzen einer GitHub Action
 
-
+Um den build Prozess remote über GitHub laufen lassen zu können, haben wir uns dazu entschieden eine GitHub Action aufzusetzen. Die Action liegt unter `.github/worflows/` und kann dort bei Bedarf angepasst/verändert werden. Sie nutzt einen bestehenden [Prozess](https://github.com/joshlarsen/jekyll4-deploy-gh-pages) nach, wurde von uns jedoch insofern angepasst, dass wir aktuell ausschließlich einen manuellen Trigger definiert haben. Bei Bedarf könnte definiert werden, dass die Action jedes mal starten soll, wenn ein push auf den `main` Branch ausgeführt wird oder dass die Action in regelmäßigen Intervallen mittels cron job initiiert wird. Für unsere Zwecke war der manuelle Trigger die beste Lösung, da wir anfänglich viel herumprobiert haben und nicht bei jeder kleinen Veränderung die Action starten wollten. Wenn die Action läuft nimmt sie die source Dateien vom `main` Branch, baut die statischen html-Seiten und pusht das Ergebnis auf den `gh-paes` Branch. Vom `gh-pages` Branch aus wird anschließend die Seite über GitHub-Pages gerendert/veröffentlicht. Das Hinzufügen neuer Inhalte geschieht demnach nur auf dem `main` Branch. Der `gh-pages` Branch muss und sollte also nicht manuell verändert werden.
 
 ### Ablauf der Veröffentlichung
 1. Inhalte vorbereiten wie gehabt (als md oder html – yaml header muss in jedem Fall enthalten sein, damit Jekyll die Seite ordentlich bauen kann)
