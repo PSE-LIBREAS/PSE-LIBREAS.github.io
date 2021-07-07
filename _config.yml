@@ -31,6 +31,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll/scholar
+  - jekyll-sitemap
   
 scholar:
   style: modern-language-association
