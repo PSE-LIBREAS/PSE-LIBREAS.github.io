@@ -1,4 +1,4 @@
-# PSE-LIBREAS –- Digitale Wissenschafts- und Fachkommunikation (Projektseminar)
+# PSE-LIBREAS – Digitale Wissenschafts- und Fachkommunikation (Projektseminar)
 
 ## Dokumentation (Technik Team)
 
