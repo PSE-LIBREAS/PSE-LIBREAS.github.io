@@ -14,5 +14,9 @@
 {% endif %}
 
 {% if entry.bibtex_show %}
+<button class="btn" onclick="onclick="toggleBibtex{{entry.key}}()">Abstract</button>
+{% endif %}
+                                                
+{% if entry.bibtex_show %}
 <div id="b{{entry.key}}" class="hidden-bibtex"><pre>{{entry.bibtex}}</pre></div>
 {% endif %}
