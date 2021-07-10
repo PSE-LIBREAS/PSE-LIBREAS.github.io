@@ -1,19 +1,12 @@
 ---
 ---
-{% style %}
-
-  .bibliography {
-    list-style: none
-  }
-{% endstyle %}
-
 {{ reference }}
 {% if entry.pubstate %}
 [{{ entry.pubstate }}]
 {% endif %}
 
 {% if entry.abstract %}
-<li/>
+<li>Abstract:</li>
 <p>{{ entry.abstract }}</p>
 {% endif %}
 
