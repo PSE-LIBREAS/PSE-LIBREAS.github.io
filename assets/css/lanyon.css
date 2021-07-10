@@ -448,7 +448,7 @@ a.pagination-item:hover {
   padding: 25px 25px;
   margin: 5px;
   border-radius: 5px;
-  display: inline-block;
+  display: none;
   box-sizing: content-box;
   width: auto;
   text-align: left;
@@ -466,6 +466,7 @@ a.pagination-item:hover {
   margin: 4px 2px;
   width: 75px;
   border-radius: 15px;
+  display: inline-block;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
