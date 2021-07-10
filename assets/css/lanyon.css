@@ -453,10 +453,11 @@ a.pagination-item:hover {
 .btn{
   background: none;
   color: #700000;
-  border: none;
+  border-color: #edece8;
   padding: 8px;
   width: 75px;
   border-radius: 15px;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
