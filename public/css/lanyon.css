@@ -449,14 +449,22 @@ a.pagination-item:hover {
   box-sizing: content-box;
   width: auto;
   text-align: left;
+  overflow: scroll; 
+  overflow-y: scroll; 
+  overflow-x: scroll; 
+  overflow: -moz-scrollbars-vertical;
 }
 .btn{
   background: none;
   color: #700000;
-  border: none;
+  border-color: #edece8;
   padding: 8px;
   width: 75px;
   border-radius: 15px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 
