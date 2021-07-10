@@ -17,7 +17,7 @@
 <button class="btn" onclick="toggleBibtex{{entry.key}}()">BibTeX</button>
 {% endif %}
                                                 
-{% if entry.bibtex_show %}
+{% if entry.bibtex %}
 <div id="a{{entry.key}}" class="hidden-bibtex"><pre>{{ entry.bibtex }}</pre></div>
 {% endif %}
 
