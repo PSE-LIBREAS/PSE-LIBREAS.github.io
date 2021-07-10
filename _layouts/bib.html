@@ -6,10 +6,11 @@
 {% endif %}
 
 {% if entry.abstract %}
-<li>Abstract:</li>
-<p>{{ entry.abstract }}</p>
+<button class="btn" onclick="onclick="toggleAbstract{{entry.key}}()">Abstract</button>
+<div id="a{{entry.key}}" class="hidden-abstract">{{ entry.abstract }}</div>
 {% endif %}
 
-<!--{% if entry.bibtex_show %}
-{{ entry.bibtex }}
-{% endif %}-->
+{% if entry.bibtex_show %}
+<button class="btn" onclick="onclick="toggleBibtex{{entry.key}}()">BibTeX</button>
+<div id="b{{entry.key}}" class="hidden-bibtex">{{ entry.bibtex }}</div>                                             
+{% endif %}
