@@ -14,11 +14,19 @@
   }, false);
 })(document);
 
-function show(element) {
-var x = document.getElementById(element);
-if (x.style.display != "block") {
-x.style.display = "block";
-} else {
-x.style.display = "none";
-  }
+function toggleBibtex{{entry.key}}(parameter) {
+    var x= document.getElementById('a{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function toggleAbstract{{entry.key}}(parameter) {
+    var x= document.getElementById('b{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
 }
