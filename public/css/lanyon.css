@@ -437,6 +437,8 @@ a.pagination-item:hover {
   display: none;
   box-sizing: content-box;
   text-align: justify;
+  text-decoration: none;
+  width: 50%;
   overflow-y: scroll; 
   overflow-x: scroll; 
 }
@@ -449,6 +451,7 @@ a.pagination-item:hover {
   border-radius: 5px;
   display: inline-block;
   box-sizing: content-box;
+  width: auto;
   text-align: left;
   text-decoration: none;
   overflow-y: scroll; 
