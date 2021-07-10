@@ -457,6 +457,9 @@ a.pagination-item:hover {
   padding: 8px;
   width: 75px;
   border-radius: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 
