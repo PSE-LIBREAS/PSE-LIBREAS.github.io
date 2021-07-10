@@ -428,60 +428,11 @@ a.pagination-item:hover {
 
 /* Bibliography */
 
-ol.bibliography {
+.bibliography {
   list-style: none;
   padding: 0;
   margin-top: 0;
 }
-ol.bibliography li {
-  margin-bottom: 1rem;
-}
-ol.bibliography li .links a.btn {
-  border: 1px solid;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-ol.bibliography li .links a.btn:hover {
-  color: grey;
-  border-color: none;
-}
-ol.bibliography li .hidden {
-  font-size: 0.875rem;
-  max-height: 0px;
-  overflow: hidden;
-  text-align: justify;
-  -webkit-transition: 0.15s ease;
-  -moz-transition: 0.15s ease;
-  -ms-transition: 0.15s ease;
-  -o-transition: 0.15s ease;
-  transition: all 0.15s ease;
-}
-ol.bibliography li .hidden p {
-  line-height: 1.4em;
-  margin: 10px;
-}
-ol.bibliography li .hidden pre {
-  font-size: 1em;
-  line-height: 1.4em;
-  padding: 10px;
-}
-ol.bibliography li .hidden.open {
-  max-height: 100em;
-  -webkit-transition: 0.15s ease;
-  -moz-transition: 0.15s ease;
-  -ms-transition: 0.15s ease;
-  -o-transition: 0.15s ease;
-  transition: all 0.15s ease;
-}
-ol.bibliography li div.abstract.hidden {
-  border: dashed 1px;
-}
-ol.bibliography li div.abstract.hidden.open {
-  border-color: none;
-}
-
 
 /*
  * Themes
