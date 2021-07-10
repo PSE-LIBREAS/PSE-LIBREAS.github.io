@@ -425,6 +425,41 @@ a.pagination-item:hover {
           transform: translateX(-14rem);
 }
 
+
+/* Bibliography */
+
+.hidden-abstract{
+  background: #edece8;
+  color: black;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  display: none;
+  box-sizing: content-box;
+  width: 50%;
+  text-align: justify;
+}
+.hidden-bibtex{
+  background: #edece8;
+  color: black;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  display: none;
+  box-sizing: content-box;
+  width: auto;
+  text-align: left;
+}
+.btn{
+  background: none;
+  color: #ac4142;
+  border: none;
+  padding: 8px;
+  width: 75px;
+  border-radius: 15px;
+}
+
+
 /*
  * Themes
  *
