@@ -5,25 +5,11 @@
 [{{ entry.pubstate }}]
 {% endif %}
 
-<!-- {% if entry.abstract %}
+{% if entry.abstract %}
+<li/>
 <p>{{ entry.abstract }}</p>
 {% endif %}
 
 {% if entry.bibtex_show %}
-{% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
-{% endif %} -->
-
-
-<!-- Hidden abstract block -->
-    {% if entry.abstract %}
-    <div class="abstract hidden">
-      <p>{{ entry.abstract }}</p>
-    </div>
-    {% endif %}
-
-    <!-- Hidden bibtex block -->
-    {% if entry.bibtex_show %}
-    <div class="bibtex hidden">
-      {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
-    </div>
-    {% endif %}
+{{ entry.bibtex }}
+{% endif %}
