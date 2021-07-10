@@ -425,15 +425,6 @@ a.pagination-item:hover {
           transform: translateX(-14rem);
 }
 
-
-/* Bibliography */
-
-.bibliography {
-  list-style: none;
-  padding: 0;
-  margin-top: 0;
-}
-
 /*
  * Themes
  *
