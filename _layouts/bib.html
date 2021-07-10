@@ -10,7 +10,7 @@
 {% endif %}
                                                                  
 {% if entry.abstract %}
-<div id="a{{entry.key}}"><pre class="hidden-abstract">{{ entry.abstract }}</pre></div>
+<div id="b{{entry.key}}"><pre class="hidden-abstract">{{ entry.abstract }}</pre></div>
 {% endif %}
 
 {% if entry.bibtex_show %}
@@ -18,7 +18,7 @@
 {% endif %}
                                                 
 {% if entry.bibtex_show %}
-<div id="b{{entry.key}}" class="hidden-bibtex"><pre>{{entry.bibtex}}</pre></div>
+<div id="a{{entry.key}}" class="hidden-bibtex"><pre>{{entry.bibtex}}</pre></div>
 {% endif %}
 
 <script>
