@@ -10,15 +10,9 @@
 {% endif %}
                                                                  
 {% if entry.abstract %}
-<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
-</div>
-{% else %}
-<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex }}</pre>
-</div>
+<div id="a{{entry.key}}" class="hidden-abstract"><pre>{{ entry.abstract }}</pre></div>
 {% endif %}
 
-<div id="b{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{entry.abstract}}</pre>
-</div>
+{% if entry.bibtex_show %}
+<div id="b{{entry.key}}" class="hidden-bibtex"><pre>{{entry.bibtex}}</pre></div>
+{% endif %}
