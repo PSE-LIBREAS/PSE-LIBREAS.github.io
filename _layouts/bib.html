@@ -7,10 +7,18 @@
 
 {% if entry.abstract %}
 <button class="btn" onclick="onclick="toggleAbstract{{entry.key}}()">Abstract</button>
-<div id="a{{entry.key}}" class="hidden-abstract">{{ entry.abstract }}</div>
+{% endif %}
+                                                                 
+{% if entry.abstract %}
+<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+</div>
+{% else %}
+<div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>{{ entry.bibtex }}</pre>
+</div>
 {% endif %}
 
-{% if entry.bibtex_show %}
-<button class="btn" onclick="onclick="toggleBibtex{{entry.key}}()">BibTeX</button>
-<div id="b{{entry.key}}" class="hidden-bibtex">{{ entry.bibtex }}</div>                                             
-{% endif %}
+<div id="b{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>{{entry.abstract}}</pre>
+</div>
