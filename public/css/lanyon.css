@@ -431,29 +431,28 @@ a.pagination-item:hover {
 .hidden-abstract{
   background: #edece8;
   color: black;
-  padding: 25px;
+  padding: 25px 25px;
   margin: 5px;
   border-radius: 5px;
   display: none;
   box-sizing: content-box;
-  width: 50%;
   text-align: justify;
+  overflow-y: scroll; 
+  overflow-x: scroll; 
 }
 
 .hidden-bibtex{
   background: #edece8;
   color: black;
-  padding: 25px;
+  padding: 25px 25px;
   margin: 5px;
   border-radius: 5px;
-  display: none;
+  display: inline-block;
   box-sizing: content-box;
-  width: auto;
   text-align: left;
-  overflow: scroll; 
+  text-decoration: none;
   overflow-y: scroll; 
   overflow-x: scroll; 
-  overflow: -moz-scrollbars-horizontal;
 }
 
 .btn{
@@ -461,6 +460,7 @@ a.pagination-item:hover {
   color: #700000;
   border-color: #edece8;
   padding: 8px;
+  margin: 4px 2px;
   width: 75px;
   border-radius: 15px;
   cursor: pointer;
