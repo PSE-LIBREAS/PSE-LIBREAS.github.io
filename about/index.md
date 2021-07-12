@@ -12,7 +12,7 @@ Namentlich gekennzeichnete Beiträge geben nicht in jedem Fall die Meinung von H
 
 **ISSN 1860-7950**
 
-Kontakt: redaktion@libreas.eu
+Kontakt: [redaktion@libreas.eu](mailto:redaktion@libreas.eu)
 
 ### Editorial Board
 
