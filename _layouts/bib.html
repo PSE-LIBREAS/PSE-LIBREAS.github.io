@@ -24,7 +24,7 @@
 <script>
 function toggleBibtex{{entry.key}}(parameter) {
     var x= document.getElementById('a{{entry.key}}');
-    if (x.style.display === 'none') {
+    if (x.style.display === 'none' || x.style.display == '') {
         x.style.display = 'block';
     } else {
         x.style.display = 'none';
@@ -32,7 +32,7 @@ function toggleBibtex{{entry.key}}(parameter) {
 }
 function toggleAbstract{{entry.key}}(parameter) {
     var x= document.getElementById('b{{entry.key}}');
-    if (x.style.display === 'none') {
+    if (x.style.display === 'none' || x.style.display == '') {
         x.style.display = 'block';
     } else {
         x.style.display = 'none';
