@@ -48,9 +48,11 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   color: #313131;
   letter-spacing: -.025rem;
+  tex-rendering: optimizedlegibility;
+  line-height: 1.25;
 }
 
 
@@ -84,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 42rem;
   }
 }
 
