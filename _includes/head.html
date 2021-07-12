@@ -1,9 +1,66 @@
+<!DOCTYPE HTML>
+{% if page.lang %}
+<html lang="{{ page.lang }}">
+{% else %}
+<html>
+{% endif %}
 <head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<meta name="author" content="{{ site.author }}">
+
+
+<!-- RDFa DC -->
+
+ <!-- RDFa Metadata (in DublinCore) -->
+    {% if page.title %}
+    <meta property="dc:title" content="{{ page.title | escape }}" />
+    {% endif %}
+    {% if page.orcid %}
+    {% for id in page.orcid %}
+    <meta property="dc:creator" resource="http://orcid.org/{{ id.orcid }}" content="{{ id.name }}" />
+    {% endfor %}
+    {% else %}
+    {% for author in page.contributor %}
+    <meta property="dc:creator" content="{{ author }}" />
+    {% endfor %}
+    {% endif %}
+    {% if page.year %}
+    <meta property="dc:date" content="{{ page.year }}" />
+    {% endif %}
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="de" />
+    <meta property="dc:identifier" content="{{ site.url }}{{ page.url }}" />
+    {% if page.noncc %}
+    <meta property="dc:rights" content="{{ page.noncc }}" />
+    {% else %}
+    <meta property="dc:rights" prefix="cc: http://creativecommons.org/ns#" rel="cc:license" href="https://creativecommons.org/licenses/by/4.0/" content="CC-BY 4.0" />
+	{% endif %}
+    <meta property="dc:source" content="LIBREAS. Library Ideas" />
+    <meta property="dc:subject" content="Library and Information Science" />
+    <meta property="dc:type" content="website" />
+    <meta property="dc:description" content="{{ page.abstract | escape }}"/>
+    <meta property="dc:source" resource="urn:ISSN:1860-7950" /> 
+
+<!-- Google Scholar -->
+
+	<meta name="citation_journal_title" content="LIBREAS. Library Ideas" />
+	<meta name="citation_issue" content="{{ page.issue }}" />
+	<meta name="citation_issn" content="1860-7950" />
+	{% if page.year %}
+    <meta name="citation_publication_date" content="{{ page.year }}" />
+    {% endif %}
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
   <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+  
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -15,7 +72,9 @@
   {% if page.url and site.baseurl %}
   <link rel="canonical" href="{{ page.url }}">
   {% endif %}
-
+  
+  
+  
   <link rel="stylesheet" href="{{ '/public/css/poole.css' }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' }}">
   <link rel="stylesheet" href="{{ '/public/css/lanyon.css' }}">
