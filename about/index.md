@@ -17,21 +17,21 @@ Kontakt: [redaktion@libreas.eu](mailto:redaktion@libreas.eu)
 ### Editorial Board
 
 - Ben Kaden M.A. (University Library / Humboldt-Universität zu Berlin)
-    -- ben@libreas.eu
-- Maxi Kindling M.A. (Open Access Office Berlin (Freie Universität Berlin) / Berlin School of Library and Information Science (Humboldt-Universität zu Berlin)) -- maxi@libreas.eu
+    -- [ben@libreas.eu](ben@libreas.eu)
+- Maxi Kindling M.A. (Open Access Office Berlin (Freie Universität Berlin) / Berlin School of Library and Information Science (Humboldt-Universität zu Berlin)) -- [maxi@libreas.eu](maxi@libreas.eu)
 
 <!-- Redaktion -->
 
-- Eva Bunge M.S., M.A. (Deutsches Museum) -- eva@libreas.eu
-- Linda Freyberg M.A. (UCLAB, Fachhochschule Potsdam & Museum für Naturkunde) -- linda@libreas.eu
-- Najko Jahn M.A. (SUB Göttingen) -- najko@libreas.eu
-- Sarah Juen B.A. (Berlin School of Library and Information Science / Humboldt Universität zu Berlin) -- sarah@libreas.eu
-- Jana Rumler M.A. (Museum für Naturkunde Berlin) - jana@libreas.eu
+- Eva Bunge M.S., M.A. (Deutsches Museum) -- [eva@libreas.eu](eva@libreas.eu)
+- Linda Freyberg M.A. (UCLAB, Fachhochschule Potsdam & Museum für Naturkunde) -- [linda@libreas.eu](linda@libreas.eu)
+- Najko Jahn M.A. (SUB Göttingen) -- [najko@libreas.eu](najko@libreas.eu)
+- Sarah Juen B.A. (Berlin School of Library and Information Science / Humboldt Universität zu Berlin) -- [sarah@libreas.eu](sarah@libreas.eu)
+- Jana Rumler M.A. (Museum für Naturkunde Berlin) - [jana@libreas.eu](jana@libreass.eu)
 - Dr. Karsten Schuldt (Schweizerisches Institut für
-    Informationswissenschaft, FH Graubünden) -- karsten@libreas.eu
-- Matti Stöhr M.A. (TIB Hannover) -- matti@libreas.eu
+    Informationswissenschaft, FH Graubünden) -- [karsten@libreas.eu](karsten@libreas.eu)
+- Matti Stöhr M.A. (TIB Hannover) -- [matti@libreas.eu](matti@libreas.eu)
 - Michaela Voigt M.A. (Technische Universität Berlin) --
-    michaela@libreas.eu
+    [michaela@libreas.eu](michaela@libreas.eu)
 
 #### ehemalige Redaktionsmitglieder
 
