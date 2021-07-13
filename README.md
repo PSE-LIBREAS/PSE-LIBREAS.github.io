@@ -15,11 +15,11 @@ Die Bibliographie liegt im `BibTeX` Format im Ordner `_bibliography` und muss im
 
 #### Neue Ordnerstruktur
 
-Um die Übersichtlichkeit des Repos zu verbessern, haben wir entschieden die Ordnerstruktur ein wenig abzuändern. Wir haben einen Ordner `archiv` erstellt, in dem wir für alle alten Ausgaben der LIBREAS jeweils eigene Unterordner ablegen wollen. Der übergeordnete `archiv` Ordner enthält zusätzlich eine `index.md`, in der wir über Links im Markdown Format auf die jeweiligen Unterordner verweisen. Für die jeweils aktuelle Ausgabe der LIBREAS haben wir einen Ordner `aktuelle_ausgabe` erstellt, in dem dann ein Ordner für den content der aktuellen Ausgabe liegen soll. Die `about.md`, die zuvor im root Verzeichnis des Repos lag, haben wir in einen neu erstellten `about` Ordner verschoben und zu `index.md` umbenannt. Wir wollten damit erreichen, dass für jeden Reiter in der Seitenleiste (nav-bar), hinter dem kein externer Link liegt, ein eigener (Unter-)Ordner existiert und somit nur die `index.md` der Startseite sowie die `404.html` (plain) unter root liegen. Im LIBREAS-Repo bereits existierende Ordner wurden dabei weitesgehend übernommen (z.B. authorguides, autorinnen, bilder). Ebenso wurde das `lanyon` Theme und damit auch weitestgehend die Ordner `_includes` und `_layout` übernommen. Die font-awesome Datei wurde in den Ordner `fonts` verschoben und im head eingebunden, anstatt mit scss zu arbeiten.
+Um die Übersichtlichkeit des Repos zu verbessern, haben wir entschieden die Ordnerstruktur ein wenig abzuändern. Wir haben einen Ordner `archiv` erstellt, in dem wir für alle alten Ausgaben der LIBREAS jeweils eigene Unterordner ablegen wollen. Der übergeordnete `archiv` Ordner enthält zusätzlich eine `index.md`, in der wir über Links im Markdown Format auf die jeweiligen Unterordner verweisen. Für die jeweils aktuelle Ausgabe der LIBREAS haben wir einen Ordner `aktuelle_ausgabe` erstellt, in dem dann ein Ordner für den content der aktuellen Ausgabe liegen soll. Die `about.md`, die zuvor im root Verzeichnis des Repos lag, haben wir in einen neu erstellten `about` Ordner verschoben und zu `index.md` umbenannt. Wir wollten damit erreichen, dass für jeden Reiter in der Seitenleiste (nav-bar), hinter dem kein externer Link liegt, ein eigener (Unter-)Ordner existiert und somit nur die `index.md` der Startseite sowie die `404.html` (plain) unter root liegen. Im LIBREAS-Repo bereits existierende Ordner wurden dabei weitestgehend übernommen (z.B. authorguides, autorinnen, bilder). Ebenso wurde das `lanyon` Theme und damit auch weitestgehend die Ordner `_includes` und `_layout` übernommen. Die `font-awesome.css` wurde in den Ordner `fonts` verschoben und in `head.html` eingebunden, anstatt mit `scss` zu arbeiten.
 
 #### Styling der Bibliographie
 
-Das Template (`bib.html`) für die Bibliographie liegt im Ordner `layouts`. Hier wird angegeben, wie der Abstract und der BibTex Button angezeigt werden. Hierfür sind toggel Funktionen in der `bib.html` definiert. In `public/css` wird lanyon um drei neue Klassen (hidden-abstract, hidden-bibtex, btn) erweitert, um das Styling der Buttons und der Anzeigen des Abstract sowie der BibTex-Preview zu definieren. In `poole.css` wurde der Klasse pre ein overflow-x:sroll zugefügt, white-space und word-break wurden auskommentiert, hierdurch wurde das Styling entsprechend unserer Vorstellungen angepasst.
+Weiteres Styling der Bibliographie wurde mittels des `bib.html` Templates hinzugefügt. Dieses liegt im Ordner `_layouts`. Das Template definiert insbesondere, dass es einen Abstract sowie einen BibTeX Button gibt und diese mit Hilfe einer toggle Funktion ein Aus- und Einblenden der Inhalte ermöglichen. Zudem sind in der `lanyon.css` unter `/public/css/` drei neue Klassen (`hidden-abstract`, `hidden-bibtex`, `btn`) definiert, um das Styling der Buttons und der Anzeigen des Abstract sowie der BibTeX-Preview zu definieren. In `poole.css` wurde der Klasse `pre` ein `overflow-x:sroll` hinzugefügt, `white-space` und `word-break` wurden auskommentiert. Dies ermöglicht für die BibTeX-Preview scrolling wenn der Text die Feldbreite überschreitet.
 
 ### Veränderungen an der Website
 
@@ -36,8 +36,8 @@ Um den build Prozess remote über GitHub laufen lassen zu können, haben wir uns
 4. Regelmäßige Update-Routine (Jekyll, Gems, Dependencies)
 
 ### To-Do's
-1. Layout ist noch nicht vollständig angepasst --> muss noch entsprechend fertiggestellt werden
-2. Inhalte müssen importiert werden
+1. Layout ist noch nicht vollständig angepasst (insb. Abstände und evtl. haben wir noch etwas übersehen) --> muss noch entsprechend fertiggestellt werden
+2. Inhalte müssen importiert werden bzw. Änderungen auf LIBREAS Repo übertragen werden
 3. plugins müssen überprüft/ergänzt werden
 4. ggf. DOIs in Bibliographie als klickbare Links setzen (wird aktuell nur über einen quick-fix erreicht)
-5. Der Footer muss aktualisiert/angepasst werden
+5. Der Footer muss aktualisiert/angepasst werden (wir benutzen uMn kein Octopress)
